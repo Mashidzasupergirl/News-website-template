@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+header h1, header h2 {
+    text-align: center;    
+}
+header h1 {
+    font-size: 3vw;
+}
+header h2 {
+    margin-top: 2vh;
+    font-size: 2vw;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1vh;
+}
+nav button {
+    background-color: white;
+    margin: 0.5vw;
+    padding: 0.6vw;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1vw;
+}
+nav button:hover {
+    background-color: rgb(214, 169, 206);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.43);
+-webkit-box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.43);
+-moz-box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.43);
+    background-image: url("https://media.istockphoto.com/vectors/seamless-pattern-with-tiger-stripes-vector-id1349184109?b=1&k=20&m=1349184109&s=170667a&w=0&h=LFktx0J3QnPYTPBpM44EZ_dMW4K60wFqbLDxx4AnLAM=");
+    transition-duration: 1s, 1s, 1s;
+    transition-property: background-color, box-shadow, background-image;
+  }
+section {
+    padding: 1vh 5vh;
+}
+section h2 {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+}
+hr {
+    border: 1px solid rgb(187, 186, 186);
+}
+.one-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 0;
+
+}
+article {
+    width: 22vw;
+    height: 30vw;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 36px 0px rgba(0,0,0,0.42);
+-webkit-box-shadow: 1px 1px 36px 0px rgba(0,0,0,0.42);
+-moz-box-shadow: 1px 1px 36px 0px rgba(0,0,0,0.42);
+}
+article img {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+.half {
+    height: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.top h2 {
+    font-size: 2vw;
+}
+.top > p {
+    font-size: 1.1vw;
+    
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons > button {
+    margin: 0.5vw;
+    padding: 0.6vw;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1vw;
+}
+.buttons > button:hover {
+    background-color: rgb(214, 169, 206);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.43);
+-webkit-box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.43);
+-moz-box-shadow: 1px 1px 6px 4px rgba(0,0,0,0.43);
+    background-image: url("https://media.istockphoto.com/vectors/seamless-pattern-with-tiger-stripes-vector-id1349184109?b=1&k=20&m=1349184109&s=170667a&w=0&h=LFktx0J3QnPYTPBpM44EZ_dMW4K60wFqbLDxx4AnLAM=");
+    transition-duration: 1s, 1s, 1s;
+    transition-property: background-color, box-shadow, background-image;
+  }
+.bottom p {
+    align-self: center;
+    font-size: 1vw; 
+}
+  @media screen and (max-width: 912px) {
+    header {
+        margin: 10vw 4vw 2vw;
+    }
+    header h1 {
+        font-size: 6vw;
+    }
+    
+    header h2 {
+        margin-top: 2vh;
+        font-size: 4vw;
+    }
+    nav button {
+        margin: 1vw;
+        padding: 1vw;
+        font-size: 2vw;
+    }
+    section {
+        padding: 2vw 6vw;
+    }
+    section h2 {
+        margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+    .one-section {
+        padding: 4vw 0;
+    }
+    article {
+        width: 42vw;
+        height: 57vw;
+        margin: 4vw 0;
+    }
+    .top h2 {
+        font-size: 4vw;
+    }
+    .top > p {
+        font-size: 2vw;
+    }
+    .buttons > button {
+        margin: 1vw;
+        padding: 1vw;
+        font-size: 2vw;
+    }
+    .bottom p {
+        font-size: 2vw; 
+    }
+}
+@media screen and (max-width: 414px) {
+    header {
+        margin: 10vw 4vw 8vw;
+    }
+    header h1 {
+        font-size: 8vw;
+    }
+    
+    header h2 {
+        margin-top: 2vh;
+        font-size: 6vw;
+    }
+    section {
+        padding: 2vw 4vw;
+    }
+    section h2 {
+        margin-bottom: 2vw;
+        font-size: 6vw;
+    }
+    .one-section {
+        padding: 4vw 0;
+    }
+    article {
+        width: 98vw;
+        height: 134vw;
+        margin: 4vw 0;
+    }
+    nav {
+        visibility: hidden;
+      }
+    .top h2 {
+        font-size: 6vw;
+    }
+    .top > p {
+        font-size: 4vw;
+    }
+    .buttons > button {
+        margin: 1vw;
+        padding: 2vw;
+        font-size: 4vw;
+    }
+    .bottom p {
+        font-size: 4vw; 
+    }
+  }
